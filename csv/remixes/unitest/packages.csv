@@ -1,0 +1,13 @@
+# "unitest" remix - a remix containing all the packages provided by unitest
+# See the STANDARDS file for more information about what belongs in each category, and what does not
+
+# node_name | original_mod
+
+# unitest packages
+test_node|unitest
+
+# supporting packages (.depends)
+
+# supporting packages (.at_least_one)
+
+# supporting packages (.optional)
