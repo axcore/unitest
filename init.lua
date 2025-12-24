@@ -20,7 +20,7 @@ unitest = {}
 unitest.name = "unitest"
 
 unitest.ver_max = 1
-unitest.ver_min = 0
+unitest.ver_min = 1
 unitest.ver_rev = 0
 
 unitest.intllib = S
@@ -29,15 +29,15 @@ unitest.intllib = S
 -- Initial setup
 ---------------------------------------------------------------------------------------------------
 
--- Tell unilib to use this mod as an expansion pack (in addition to any other expansion packs
---      that have already been loaded)
-if xunilib == nil then
+-- Tell unilib to use this mod as an expansion pack (in addition to any other expansion packs that
+--      have already been loaded)
+if not core.global_exists("unilib_expansion") then
 
-    xunilib = {}
-    xunilib.ext_pack_list = {"unitest"}
+    unilib_expansion = {}
+    unilib_expansion.ext_pack_list = {"unitest"}
 
 else
 
-    table.insert(xunilib.ext_pack_list, "unitest")
+    table.insert(unilib_expansion.ext_pack_list, "unitest")
 
 end

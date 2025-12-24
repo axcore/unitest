@@ -11,3 +11,5 @@ test_node|unitest
 # supporting packages (.at_least_one)
 
 # supporting packages (.optional)
+
+# supporting packages (.suggested)
